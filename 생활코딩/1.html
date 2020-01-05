@@ -4,13 +4,19 @@
   <meta charset="utf-8">
   <title>9's 연습용</title>
   <style>
-    a, h1{
-      color:red;
-      border:5px solid red;
-      padding:10px;
-      margin:0px;
-      display:block;
-      width:100px;
+   h1{
+      font-size:60px;
+      text-align:center;
+      border-bottom:3px solid gray;
+      margin: 0;
+      padding:20px;
+    }
+
+    ol{
+      border-right: 3px solid gray;
+      margin:0;
+      padding-top:30px;
+      padding-left:44px;
     }
 
     li{
@@ -22,17 +28,33 @@
     #active{
       color:blue;
     }
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      height:270px;
+    }
+    #ww{
+      margin-left:16px;
+    }
   </style>
 </head>
 
 <body>
-  <h1><a href="index.html"target="-_blank" title="생활코딩">WEB</a></h1>
-  <ol>
-    <li><a href="1.html" class="saw" target="-_blank" title="그대로" >HTML</a></li>
-    <li><a href="2.html"class="saw" id= "active" target="-_blank" title="두 번째 페이지">CSS</a></li>
-    <li><a href="3.html"target="-_blank" title="세 번째 페이지">JavaScript</a></li><br>
-  </ol>
 
+  <h1><a href="index.html"target="-_blank" title="생활코딩">WEB</a></h1>
+    <div id="grid">
+    <ol>
+      <li><a href="1.html" class="saw" target="-_blank" title="그대로" >HTML</a></li>
+      <li><a href="2.html"class="saw" id= "active" target="-_blank" title="두 번째 페이지">CSS</a></li>
+      <li><a href="3.html"target="-_blank" title="세 번째 페이지">JavaScript</a></li><br>
+    </ol>
+
+    <div id="ww">
+      <p>
+        World War II (often abbreviated to WWII or WW2), also known as the Second World War, was a global war that lasted from 1939 to 1945. The vast majority of the world's countries—including all the great powers—eventually formed two opposing military alliances: the Allies and the Axis.
+      </p>
+    </div>
+  </div>
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155165979-1"></script>
 <script>
