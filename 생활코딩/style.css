@@ -24,7 +24,7 @@ h1{
    font-size:20px;
  }
  .saw{
-   color:gray;
+   color:blue;
  }
  #grid{
    display: grid;

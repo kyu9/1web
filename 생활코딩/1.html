@@ -4,16 +4,34 @@
   <meta charset="utf-8">
   <title>9's 연습용</title>
   <link rel="stylesheet" href="style.css">
+<script src="colors.js"></script>
+
 </head>
 
 <body>
 
   <h1><a href="index.html"target="-_blank" title="생활코딩">WEB</a></h1>
+
+    <input type="button" value="Night" onclick="
+    var target = document.querySelector('body');
+      target.style.backgroundColor='black';
+      target.style.color='white';
+    ">
+    <input type="button" value="Day" onclick="
+    var target = document.querySelector('body');
+      target.style.backgroundColor='white';
+      target.style.color='black';
+    ">
+    <input id="day_night" type="button" value="Night" onclick="
+      nightDayHandler(this);
+    ">
+
     <div id="grid">
     <ol>
       <li><a href="1.html" class="saw" target="-_blank" title="그대로" >HTML</a></li>
-      <li><a href="2.html"class="saw" target="-_blank" title="두 번째 페이지">CSS</a></li>
-      <li><a href="3.html"target="-_blank" title="세 번째 페이지">JavaScript</a></li><br>
+      <li><a href="2.html" class="saw" target="-_blank" title="두 번째 페이지" >CSS</a></li>
+      <li><a href="3.html" class="saw" target="-_blank" title="세 번째 페이지" >JavaScript</a></li><br>
+
     </ol>
 
     <div id="ww">
@@ -101,6 +119,20 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
+
+<input id="day_night" type="button" value="Night" onclick="
+var target = document.querySelector('body');
+  if(this.value === 'Night'){
+    target.style.backgroundColor='black';
+    target.style.color='white';
+    this.value='Day';
+  }
+  else{
+    target.style.backgroundColor='white';
+    target.style.color='black';
+    this.value='Night';
+  }
+">
 
 </body>
 </html>
