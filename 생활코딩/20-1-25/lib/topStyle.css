@@ -1,0 +1,44 @@
+body{
+  background-color: lightblue;
+  margin:0;
+}
+h1{
+  font-size:50px;
+  background-color:lightgreen;
+  text-align:center;
+  margin:0;
+  padding-bottom:20px;
+  border-bottom:3px solid black;
+}
+h2, h3, h4{
+  margin-left:16px;
+  margin-right:16px;
+}
+ol{
+  font-size: 25px;
+}
+grid{
+  display:grid;
+  grid-template-columns: 3fr 1fr;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+#manual{
+  margin-top:16px;
+  padding-top:0;
+  background-color: red;
+  color:white;
+  border:3px solid black;
+}
+#mtitle{
+  text-align:center;
+  background-color: yellow;
+  color:black;
+}
+#Dbutton{
+  width:45;
+  height:25;
+}
+#escapeB{
+  float:right;
+}
